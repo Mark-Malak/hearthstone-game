@@ -1,0 +1,123 @@
+How to run the game :-
+
+run the game from "Controller"class found in src folder in controller package ,
+which have a main method containing a new instance of controller being created.
+------------------------------------------------------------------------------
+How to select heroes :-
+
+After running the game press "play" from the welcome(first) window , 
+then a new window will be opened from which each player can select the hero he/she wants ;
+ where respectively player 1 will select his hero from the UPPER panel while player 2 will select his hero
+  from the LOWER panel then press START from the bottom right corner . 
+----------------------
+side note (optional): each player can write his desired in game name to be shown while playing from the right panel 
+containing two text-boxes, if however they are left empty then by default they shall be named player 1 and player 2
+ accordingly . 
+--------------------
+How to play a minion :-
+
+Hover over any minion card in your hand you would like to play or see in details in the left side card viewer panel
+ then you can play the minion just by Clicking on it "one click" , 
+unless any exceptions occurs it will automatically be played on the field and removed from hand.
+---------------
+How to cast spells :-
+
+For any spell that doesn't require to be given a target manually such as : AOESpell & FieldSpell you can just
+ cast the spell by clicking "1 click" on the spell card in your hand and it will be played autmatically 
+ given that no exceptions occur 
+
+For the rest of spells that require to be given a target such as : Minion target , hero target and Leeching spells :
+- you will first click on the desired spell to be played a white box would appear around the spell clicked to 
+confirm you want to use this spell
+ (if you want to un-select it just click it again.)
+then in case you want to target a : 
+--Minion : just click on any minion on the field "1-click"
+--Hero : just click on the hero label which contain their picture , name and hp on the player side you want to attack
+
+given that of course no exceptions occur as in such case the spell would get un-selected automatically 
+-----------------------------------------
+How to attack with a minion :- 
+
+click on the current hero minions found in his field one click upon which would make a
+ white box appear around that minion confirming you selected it to attack with , 
+ then click on any minion on the opponent's field to attack it .
+
+in case any exception occur such as taunt ,, etc the attacking and target minion would be
+ unselected automatically.
+---------------------------------------
+How to EndTurn :-
+
+by clicking on the "End Turn" JLabel that looks like a button found in the bottom left corner 
+of the game screen 
+---------------------------------------------------------
+Screen orientation/ Layout and design :-
+
+the screen is divided between PLAYER1 and PLAYER2 in a fixed manner regardless which is current hero and 
+which is opponent such as 
+
+player 1 : field , hand , hero power , hero image , hp , total and current mana , 
+current card number left in deck and in game name are all in the bottom side of the game screen 
+
+and all those of player 2 are on the upper part of the screen , 
+again regardless which of them is current hero or opponent they stay in their fixed position mentioned above 
+-------------------------------------------------------------------------------
+
+
+
+
+[ current/total Mana:-]
+
+for every hero their is a mana crystal icon at his right above his deck with this format 
+
+current Mana / total Mana 
+
+showing of course his current and total mana in that mentioned form above 
+ex: 0/0 , 2/8 / 10/10 , etc .
+
+-------------------------------------------------------------------------------------------------------------------------------
+[game feedback on clicking:-]
+
+the game has no clicking sound/animation when pressing end turn , playing , attacking with a minion , 
+ and when using hero power or casting spell , and it might get a little slower as the game progress and
+  field or hand are getting full so just note that you may press end turn
+ on late game and it will take just a second or so more than it did when starting the game to actually end turn but it won't freeze or anything just so you consider it .
+-------------------------------------------------------------------------------------------------------------------------------
+[Hero Power :]
+ 
+to use hero power just click on the circular image on the right of the hero image and if it doesn't 
+require a target to be selected manually it will automatically get used , else if it needs a target ,,
+ then a white box will appear around it indicating you selected the power to be used and then 
+ you click on any minion or a hero image one click to be executed on according of course 
+ to what this hero power can do  just like spell casting .
+also it can be unselected if you click on it again case you changed you mind.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+[ (LEGEND/Guide) for Cards Rarity: ]
+
+there is a a jlabel that looks like a button named "Guide" at the bottom left corner 
+of game screen which if clicked will open a legend containing each card rarity crystal 
+and its corresponding rarity so you can understand what each card rarity is and it explains
+ an icon as "ZZZ" which means a minion is sleeping 
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+[**** Resolution is fixed! **** :] 
+
+the game was made to run on fixed resolution and scaling as it is preferred to be run on a 1920x1080 screen
+ with scaling of 125% (from windows display settings) for optimum results ,, down to 100% scaling which 
+ would make it look small 
+any scaling larger than 125% may make it distorted or move some labels out of place so please consider this.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+[the card viewer and game components attributes:]
+
+there is a card viewer label at the center left of game screen which shows any accessible game component 
+that you can play if you hover above said component such as cards , field cards , hero image , hero power . 
+and it also serves as a magnifying glass so if any detail of any card in hand for example is not clear enough 
+can be read through it , also when hovering over a minion on the field it can show its card before playing 
+
+NOTE : the card viewer doesn't reflect any change that happened on a card so it only shows the original card image
+ so if a card got its mana changed it will be shown on hand cards only , and if a minion got any change in 
+ its health/attack etc it will be shown on minion on field only not on his "magnified image" on the card viewer 
